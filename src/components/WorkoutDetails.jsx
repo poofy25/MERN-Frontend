@@ -15,7 +15,7 @@ const WorkoutDetails = ({workout}) => {
             return
         }
         
-        const reponse = await fetch(`http://localhost:4000/api/workouts/${workout._id}` , {
+        const reponse = await fetch(`https://mern-backend-5gng.onrender.com/api/workouts/${workout._id}` , {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

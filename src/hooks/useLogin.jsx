@@ -12,7 +12,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        const reponse = await fetch ('http://localhost:4000/api/user/login' , {
+        const reponse = await fetch ('https://mern-backend-5gng.onrender.com/api/user/login' , {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})
